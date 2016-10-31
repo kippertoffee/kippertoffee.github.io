@@ -1,8 +1,43 @@
 <html>
 <head>
+
+  <script src="jquery-3.1.1.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      // Configure/customize these variables.
+      var lessHeight = 20;
+      
+
+      $('.more').each(function() {
+        $(this).height(lessHeight);
+        $(this).addClass("isless");
+   
+      });
+   
+      $(".more").click(function(){
+        if($(this).hasClass("isless")) {
+          $(this).removeClass("isless");
+          $(this).height('');
+        } else {
+          $(this).addClass("isless");
+          $(this).height(lessHeight);
+        }
+      });
+  });
+  </script>
+  
   <style>
     body {
         background-color: #FC746D;
+    }
+    
+    div.apost{
+      padding: 10px; 
+      outline: #000000 solid; 
+      display: inline-block;
+      background-color: #FC746D;
+      overflow: hidden;
     }
     
     p.postpar {
@@ -13,12 +48,19 @@
       max-width: 600px;
     }
     
+    .morecontent span {
+      display: none;
+    }
+    .morelink {
+      display: block;
+    }
+    
   </style>
 </head>
 <body>
   <h1> hello and welcome to my page </h1>
   
-  <div style="padding: 10px; outline: #000000 solid; display: inline-block ">
+  <div class="apost">
       
       <h2 style="margin-top: 0"> 29/10/2016:  cackhander (a song) </h2>
       
@@ -32,25 +74,27 @@
         </div>
       </div>
       
-      <p class="postpar">
-        This is probably the first song I have ever finished in Renoise. I think i bought Renoise over 10 years, attracted by the way it had a sampler built in, and it has just grown better and better since then. It's taken me a LONG time to get used to working in the tracker interface though, and I still often feel like I could just knock up something basic or make changes to a complex pattern more quickly in a typical piano-roll style sequencer. During the making of this song two things about Renoise which could REALLY do with a some improvements are the pattern sequencer (I find things too small and fiddly) and the automation editor (it's pain in the arse to do automation over pattern boundaries). 
-      </p>
-      
-      <p class="postpar">
-        This song is almost exclusively samples. The pad at the start is some samples from an old string machine, pitched to the wrong range. The other main synth sound that comes in halfway through is actually a snippet of a bass guitar from a Crosby Stills and Nash song (I think), but just mangled in the sampler. Making strange synth sounds out of unexpected source sounds is one of my favourite things is making music. I find it much more satisfying than straight up synthesis. There is one vst sythesizer in there - Vember Audio Surge - providing the high-pitched arp. Oh, actually, the bass synth is also a VST; Charlatan from Blaukraut engineering.
-      </p>
-      
-      <p class="postpar">
-        It is clearly heavily BOC inspired, but lacking any of the finesse of their music. I don't have the patience (or skill) to try and mimic their style too closely, and I think it's best to stick on the right side of the line between inspiration and emulation. I'd like to improve a lot about it; it's pretty sparse in musical ideas; it lacks movement in between big changes; the production is shabby. But I'll probably just leave it as it is.
-      </p>
-      
-      <p class="postpar">
-        Oh, one more thing: Valhalla Vintage Verb is really fantastic. Smooth as butter. Buy it if you need a good reverb.
-      </p>
+      <div class="more">
+        <p class="postpar">
+          This is probably the first song I have ever finished in Renoise. I think i bought Renoise over 10 years, attracted by the way it had a sampler built in, and it has just grown better and better since then. It's taken me a LONG time to get used to working in the tracker interface though, and I still often feel like I could just knock up something basic or make changes to a complex pattern more quickly in a typical piano-roll style sequencer. During the making of this song two things about Renoise which could REALLY do with a some improvements are the pattern sequencer (I find things too small and fiddly) and the automation editor (it's pain in the arse to do automation over pattern boundaries). 
+        </p>
+        
+        <p class="postpar">
+          This song is almost exclusively samples. The pad at the start is some samples from an old string machine, pitched to the wrong range. The other main synth sound that comes in halfway through is actually a snippet of a bass guitar from a Crosby Stills and Nash song (I think), but just mangled in the sampler. Making strange synth sounds out of unexpected source sounds is one of my favourite things is making music. I find it much more satisfying than straight up synthesis. There is one vst sythesizer in there - Vember Audio Surge - providing the high-pitched arp. Oh, actually, the bass synth is also a VST; Charlatan from Blaukraut engineering.
+        </p>
+        
+        <p class="postpar">
+          It is clearly heavily BOC inspired, but lacking any of the finesse of their music. I don't have the patience (or skill) to try and mimic their style too closely, and I think it's best to stick on the right side of the line between inspiration and emulation. I'd like to improve a lot about it; it's pretty sparse in musical ideas; it lacks movement in between big changes; the production is shabby. But I'll probably just leave it as it is.
+        </p>
+        
+        <p class="postpar">
+          Oh, one more thing: Valhalla Vintage Verb is really fantastic. Smooth as butter. Buy it if you need a good reverb.
+        </p>
+      </div>
       
   </div>
 
-  <div style="padding: 10px; outline: #000000 solid; display: inline-block ">
+  <div class="apost">
   
       <h2 style="margin-top: 0"> 20/10/2016:  fnordulation (a song) </h2>
       
@@ -64,32 +108,33 @@
         </div>
       </div>
       
-      <p class="postpar">
-        here's a song a i made a few months ago. the first (and possibly last) song have made with only hardware. 
-        instrument list is as follows:
-      </p>
-      
-      <ul>
-        <li> Elektron Octatrack: Midi sequencing, FX, kind-of cello sound about halfway through </li>
-        <li> Nord lead 2: drums, "string" ish chords, synth arps  </li>
-        <li> Mutable Instruments Shruthi XT: Bassline </li>
-        <li> Supa-puss bucket brigade delay pedal (on one of the NL2 sounds)</li>
-      </ul>
-      
-      <p class="postpar">
-        it really started as an experiment to see if it's possible to get decent drum sounds out of the NL2. 
-        personally I think it is a success, as long as you are content with very electronic and rough/wonky sounding drums.
-        i used some tricks on the octatrack to get a bit of randomisation in the drum patterns, so there's a bit of natural variation.
-      </p>
-      
-      <p class="postpar">
-        it's the first time i have tried to "perform" a song, which mostly involves wiggling knobs and moving faders. 
-        it took a few takes to get it a way i'm happy with, and it could be a lot better but i'm no perfectionist. 
-        i recorded it into Reaper in one take, but then added the reversed audio at the end for a laugh. i "mastered" 
-        it using a preset on a bus compressor. i'd like to work it a bit to try and get a bit more level out of it as 
-        it's too quiet.
-      </p>
-      
+      <div class="more">
+        <p class="postpar">
+          here's a song a i made a few months ago. the first (and possibly last) song have made with only hardware. 
+          instrument list is as follows:
+        </p>
+        
+        <ul>
+          <li> Elektron Octatrack: Midi sequencing, FX, kind-of cello sound about halfway through </li>
+          <li> Nord lead 2: drums, "string" ish chords, synth arps  </li>
+          <li> Mutable Instruments Shruthi XT: Bassline </li>
+          <li> Supa-puss bucket brigade delay pedal (on one of the NL2 sounds)</li>
+        </ul>
+        
+        <p class="postpar">
+          it really started as an experiment to see if it's possible to get decent drum sounds out of the NL2. 
+          personally I think it is a success, as long as you are content with very electronic and rough/wonky sounding drums.
+          i used some tricks on the octatrack to get a bit of randomisation in the drum patterns, so there's a bit of natural variation.
+        </p>
+        
+        <p class="postpar">
+          it's the first time i have tried to "perform" a song, which mostly involves wiggling knobs and moving faders. 
+          it took a few takes to get it a way i'm happy with, and it could be a lot better but i'm no perfectionist. 
+          i recorded it into Reaper in one take, but then added the reversed audio at the end for a laugh. i "mastered" 
+          it using a preset on a bus compressor. i'd like to work it a bit to try and get a bit more level out of it as 
+          it's too quiet.
+        </p>
+      </div>
   </div>
 </body>
 </html>

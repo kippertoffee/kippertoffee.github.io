@@ -33,11 +33,17 @@
     }
     
     div.apost{
-      padding: 10px; 
+      padding: 10px;
+      margin-bottom: 10px; 
       outline: #000000 solid; 
-      display: inline-block;
+      display: block;
       background-color: #FC746D;
       overflow: hidden;
+      max-width: 660px;
+    }
+
+    div.postblock{
+      max-width: 660px;
     }
     
     p.postpar {
@@ -56,19 +62,41 @@
     }
     
   </style>
+
+  <title>Kippertoffee</title>
 </head>
 <body>
-  <h1 style="margin-bottom: 0px;"> Hello and welcome to my page </h1>
+  <h1 style="margin-bottom: 0px;"> Hello </h1>
   
   <p>
-    (Click anywhere in a post to expand. Click on the play button to, uh, play.) 
   </p>
+
+
+  <div class="apost" style="background-color: #fca46d;">
+      
+    <h2 style="margin-top: 0"> 02/11/2020:  Odin VST Synth </h2>
+    
+    <div class="postblock">
+      <p class="postpar">
+        I've added a VST2 build of the latest Odin synth plugin <a href="plugins.html">here</a>.
+
+        In case you don't know what Odin is, it's a very cool plugin made by the terifficaly generous <a href="https://www.thewavewarden.com/"> The Wave Warden</a>, that was recently <a href="https://github.com/TheWaveWarden/odin2">open sourced</a>. Due to Steinberg limiting new developers from distributing VST2 plugins, the VST2 build can't be distributed by the developer. But I do have permission to distribute VST2, so I thought I'd build and chuck it up <a href="plugins.html">here</a>.
+      </p>
+    </div>
+    
+    <div class="morep">
+      <p class="postpar">
+        
+      </p>
+    </div>
+    
+</div>
   
   <div class="apost more" style="background-color: #fca46d;">
       
       <h2 style="margin-top: 0"> 12/03/2017:  Front_001 (a song) </h2>
       
-      <div style="background-image: url('./images/pcb.jpg'); height: 305px;">
+      <div class="postblock" style="background-image: url('./images/pcb.jpg'); height: 305px;">
         <p class="postpar" />
         <div style="padding-left: 222px; padding-top: 50px;">
           <audio controls>
@@ -111,7 +139,7 @@
       
       <h2 style="margin-top: 0"> 29/10/2016:  cackhander (a song) </h2>
       
-      <div style="background-image: url('./images/thegesture_660wide.jpg'); height: 320px;">
+      <div class="postblock" style="background-image: url('./images/thegesture_660wide.jpg'); height: 320px;">
         <p class="postpar" />
         <div style="padding-left: 300px; padding-top: 45px;">
           <audio controls>
@@ -145,7 +173,7 @@
   
       <h2 style="margin-top: 0"> 20/10/2016:  fnordulation (a song) </h2>
       
-      <div style="background-image: url('./images/HyperNormal.jpg'); height: 312px;">
+      <div class="postblock" style="background-image: url('./images/HyperNormal.jpg'); height: 312px;">
         <p class="postpar" />
         <div style="padding-left: 140px; padding-top: 55px;">
           <audio controls>

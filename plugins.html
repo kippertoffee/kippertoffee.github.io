@@ -1,0 +1,100 @@
+<html>
+<head>
+
+  <script src="jquery-3.1.1.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      // Configure/customize these variables.
+      var lessHeight = 150;
+      
+
+      $('.more').each(function() {
+        $(this).height(lessHeight);
+        $(this).addClass("isless");
+   
+      });
+   
+      $(".more").click(function(){
+        if($(this).hasClass("isless")) {
+          $(this).removeClass("isless");
+          $(this).height('');
+        } else {
+          $(this).addClass("isless");
+          $(this).height(lessHeight);
+        }
+      });
+  });
+  </script>
+  
+  <style>
+    body {
+        background-color: rgb(233,146,191);
+    }
+    
+    div.apost{
+      padding: 10px;
+      margin-bottom: 10px; 
+      outline: #000000 solid; 
+      display: block;
+      background-color: rgb(205,159,232);
+      overflow: hidden;
+      max-width: 660px;
+    }
+
+    div.postblock{
+      max-width: 660px;
+    }
+    
+    p.postpar {
+      max-width: 660px;
+    }
+    
+    li {
+      max-width: 600px;
+    }
+    
+    .morecontent span {
+      display: none;
+    }
+    .morelink {
+      display: block;
+    }
+    
+  </style>
+
+  <title>Kippertoffee : Plugins</title>
+</head>
+<body>
+  <h1 style="margin-bottom: 0px;"> Plugins </h1>
+
+  <p></p>
+
+  <div class="apost">
+      
+    <h2 style="margin-top: 0"> The Wave Warden Odin VST2 </h2>
+    
+    <div class="postblock">
+      <p class="postpar">
+
+        Odin is a very cool plugin made by the terifficaly generous <a href="https://www.thewavewarden.com/"> The Wave Warden</a>, that was recently <a href="https://github.com/TheWaveWarden/odin2">open sourced</a>. Due to Steinberg limiting new developers from distributing VST2 plugins, the VST2 build can't be distributed by the developer. But I do have permission to distribute VST2, so I thought I'd build and chuck it up here.
+      
+      </p>
+      <p class="postpar">
+      
+        It's Windows only for now. I'll try and keep up with any future releases as they happen.
+      
+      </p>
+      <p class="postpar">
+      
+        <ul>
+          <li> <a href="pluginfiles/odin2/2.24/odin2.zip"> Odin 2.24 </a> </li>
+        </ul>
+      
+      </p>
+    </div>
+    
+  </div>
+  
+</body>
+</html>

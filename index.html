@@ -1,215 +1,274 @@
 <html>
+
 <head>
 
-  <script src="jquery-3.1.1.min.js"></script>
-  
-  <script>
-    $(document).ready(function() {
-      // Configure/customize these variables.
-      var lessHeight = 150;
-      
+   <script src="jquery-3.1.1.min.js"></script>
 
-      $('.more').each(function() {
-        $(this).height(lessHeight);
-        $(this).addClass("isless");
-   
+   <script>
+      $(document).ready(function () {
+         // Configure/customize these variables.
+         var lessHeight = 150;
+
+
+         $('.more').each(function () {
+            $(this).height(lessHeight);
+            $(this).addClass("isless");
+
+         });
+
+         $(".more").click(function () {
+            if ($(this).hasClass("isless")) {
+               $(this).removeClass("isless");
+               $(this).height('');
+            } else {
+               $(this).addClass("isless");
+               $(this).height(lessHeight);
+            }
+         });
       });
-   
-      $(".more").click(function(){
-        if($(this).hasClass("isless")) {
-          $(this).removeClass("isless");
-          $(this).height('');
-        } else {
-          $(this).addClass("isless");
-          $(this).height(lessHeight);
-        }
-      });
-  });
-  </script>
-  
-  <style>
-    body {
-        background-color: #FC746D;
-    }
-    
-    div.apost{
-      padding: 10px;
-      margin-bottom: 10px; 
-      outline: #000000 solid; 
-      display: block;
-      background-color: #FC746D;
-      overflow: hidden;
-      max-width: 660px;
-    }
+   </script>
 
-    div.postblock{
-      max-width: 660px;
-    }
-    
-    p.postpar {
-      max-width: 660px;
-    }
-    
-    li {
-      max-width: 600px;
-    }
-    
-    .morecontent span {
-      display: none;
-    }
-    .morelink {
-      display: block;
-    }
-    
-  </style>
+   <style>
+      body {
+         background-color: #FC746D;
+      }
 
-  <title>Kippertoffee</title>
+      div.apost {
+         padding: 10px;
+         margin-bottom: 10px;
+         outline: #000000 solid;
+         display: block;
+         background-color: #FC746D;
+         overflow: hidden;
+         max-width: 660px;
+      }
+
+      div.postblock {
+         max-width: 660px;
+      }
+
+      p.postpar {
+         max-width: 660px;
+      }
+
+      li {
+         max-width: 600px;
+      }
+
+      .morecontent span {
+         display: none;
+      }
+
+      .morelink {
+         display: block;
+      }
+   </style>
+
+   <title>Kippertoffee</title>
 </head>
+
 <body>
-  <h1 style="margin-bottom: 0px;"> Hello </h1>
-  
-  <p>
-  </p>
+   <h1 style="margin-bottom: 0px;"> Hello </h1>
 
+   <p>
+   </p>
 
-  <div class="apost" style="background-color: #fca46d;">
-      
-    <h2 style="margin-top: 0"> 02/11/2020:  Odin VST Synth </h2>
-    
-    <div class="postblock">
-      <p class="postpar">
-        I've added a VST2 build of the latest Odin synth plugin <a href="plugins.html">here</a>.
+   <div class="apost more" style="background-color: #fca46d;">
 
-        In case you don't know what Odin is, it's a very cool plugin made by the terifficaly generous <a href="https://www.thewavewarden.com/"> The Wave Warden</a>, that was recently <a href="https://github.com/TheWaveWarden/odin2">open sourced</a>. Due to Steinberg limiting new developers from distributing VST2 plugins, the VST2 build can't be distributed by the developer. But I do have permission to distribute VST2, so I thought I'd build and chuck it up <a href="plugins.html">here</a>.
-      </p>
-    </div>
-    
-    <div class="morep">
-      <p class="postpar">
-        
-      </p>
-    </div>
-    
-</div>
-  
-  <div class="apost more" style="background-color: #fca46d;">
-      
-      <h2 style="margin-top: 0"> 12/03/2017:  Front_001 (a song) </h2>
-      
+      <h2 style="margin-top: 0"> 01/06/2022: ROYGBIV </h2>
+
+      <div class="postblock" style="background-image: url('./images/roygbiv.jpg'); height: 305px;">
+         <p class="postpar" />
+         <div style="padding-left: 222px; padding-top: 50px;">
+            <audio controls>
+               <source src="roygbiv.mp3" type="audio/mpeg">
+               Your browser does not support the audio element.
+            </audio>
+         </div>
+      </div>
+
+      <div class="morep">
+         <p class="postpar">
+            Everybody loves a bit of Board of Canada. I was bored at work so I decided to knock up a quick cover. 
+            I  made it in renoise using samples provided with the installation, and a few plugins: 
+            TAL Noisemaker, Surreal Machines Modnetic, TDR Koletnikov. And a few built in renoise effects.
+            I didn't add all the fancy trills and voices cos I really should be working.
+         </p>
+      </div>
+
+   </div>
+
+   <div class="apost" style="background-color: #fca46d;">
+
+      <h2 style="margin-top: 0"> 02/11/2020: Odin VST Synth </h2>
+
+      <div class="postblock">
+         <p class="postpar">
+            I've added a VST2 build of the latest Odin synth plugin <a href="plugins.html">here</a>.
+
+            In case you don't know what Odin is, it's a very cool plugin made by the terifficaly generous <a
+               href="https://www.thewavewarden.com/"> The Wave Warden</a>, that was recently <a
+               href="https://github.com/TheWaveWarden/odin2">open sourced</a>. Due to Steinberg limiting new developers
+            from distributing VST2 plugins, the VST2 build can't be distributed by the developer. But I do have
+            permission to distribute VST2, so I thought I'd build and chuck it up <a href="plugins.html">here</a>.
+         </p>
+      </div>
+
+      <div class="morep">
+         <p class="postpar">
+
+         </p>
+      </div>
+
+   </div>
+
+   <div class="apost more" style="background-color: #fca46d;">
+
+      <h2 style="margin-top: 0"> 12/03/2017: Front_001 (a song) </h2>
+
       <div class="postblock" style="background-image: url('./images/pcb.jpg'); height: 305px;">
-        <p class="postpar" />
-        <div style="padding-left: 222px; padding-top: 50px;">
-          <audio controls>
-            <source src="Front_001_v001.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-        </div>
+         <p class="postpar" />
+         <div style="padding-left: 222px; padding-top: 50px;">
+            <audio controls>
+               <source src="Front_001_v001.mp3" type="audio/mpeg">
+               Your browser does not support the audio element.
+            </audio>
+         </div>
       </div>
-      
-      <div class="morep">
-        <p class="postpar">
-          This song started a year or so ago when I got a nord lead 2 keyboard and was playing around with the drum programs and arpeggiator. This resulted in the weird drum pattern for this song. The song was mostly made by me badly playing a part over the rest while twiddling knobs, then recording the audio in Reaper. Once I had a few parts I started to arrange them a bit.
-        </p>
-        
-        <p class="postpar">
-          There are no samples in this track; all hardware synths. Instruments used were:
-        </p>
-            <ul>
-              <li> Nord lead 2 </li>
-              <li> DSI Tempest </li>
-              <li> Shruthi XT with 4PM filter board</li>
-              <li> Alesis Ion</li>
-            </ul>
-        <p class="postpar">
-            I used an analog delay pedal (Supapuss) for delay sounds and noises, and way too much Valhalla Vintageverb.
-        </p>
-        
-        <p class="postpar">
-          There's no sensible structure to speak of, I just brought some part in and out as I felt like it and then decided it was finished. Listening away from the computer I can see some arrangement changes I'd like to make and mixing improvements, which I'll probably do at some point.
-        </p>
-        
-        <p class="postpar">
-          Sadly I killed the control board of my shruthi xt the other day, so until I can be bothered to source the parts and build a new one, there'll be no more tasty noises coming from that. 
-        </p>
-      </div>
-      
-  </div>
-  
-  <div class="apost more" style="background-color: #fca46d;">
-      
-      <h2 style="margin-top: 0"> 29/10/2016:  cackhander (a song) </h2>
-      
-      <div class="postblock" style="background-image: url('./images/thegesture_660wide.jpg'); height: 320px;">
-        <p class="postpar" />
-        <div style="padding-left: 300px; padding-top: 45px;">
-          <audio controls>
-            <source src="cackhander_v001.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-      </div>
-      
-      <div class="morep">
-        <p class="postpar">
-          This is probably the first song I have ever finished in Renoise. I think i bought Renoise over 10 years, attracted by the way it had a sampler built in, and it has just grown better and better since then. It's taken me a LONG time to get used to working in the tracker interface though, and I still often feel like I could just knock up something basic or make changes to a complex pattern more quickly in a typical piano-roll style sequencer. During the making of this song two things about Renoise which could REALLY do with a some improvements are the pattern sequencer (I find things too small and fiddly) and the automation editor (it's pain in the arse to do automation over pattern boundaries). 
-        </p>
-        
-        <p class="postpar">
-          This song is almost exclusively samples. The pad at the start is some samples from an old string machine, pitched to the wrong range. The other main synth sound that comes in halfway through is actually a snippet of a bass guitar from a Crosby Stills and Nash song (I think), but just mangled in the sampler. Making strange synth sounds out of unexpected source sounds is one of my favourite things is making music. I find it much more satisfying than straight up synthesis. There is one vst sythesizer in there - Vember Audio Surge - providing the high-pitched arp. Oh, actually, the bass synth is also a VST; Charlatan from Blaukraut engineering.
-        </p>
-        
-        <p class="postpar">
-          It is clearly heavily BOC inspired, but lacking any of the finesse of their music. I don't have the patience (or skill) to try and mimic their style too closely, and I think it's best to stick on the right side of the line between inspiration and emulation. I'd like to improve a lot about it; it's pretty sparse in musical ideas; it lacks movement in between big changes; the production is shabby. But I'll probably just leave it as it is.
-        </p>
-        
-        <p class="postpar">
-          Oh, one more thing: Valhalla Vintage Verb is really fantastic. Smooth as butter. Buy it if you need a good reverb.
-        </p>
-      </div>
-      
-  </div>
 
-  <div class="apost more" style="background-color: #fca46d;">
-  
-      <h2 style="margin-top: 0"> 20/10/2016:  fnordulation (a song) </h2>
-      
-      <div class="postblock" style="background-image: url('./images/HyperNormal.jpg'); height: 312px;">
-        <p class="postpar" />
-        <div style="padding-left: 140px; padding-top: 55px;">
-          <audio controls>
-            <source src="fnordulation.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-      </div>
-      
       <div class="morep">
-        <p class="postpar">
-          here's a song a i made a few months ago. the first (and possibly last) song have made with only hardware. 
-          instrument list is as follows:
-        </p>
-        
-        <ul>
-          <li> Elektron Octatrack: Midi sequencing, FX, kind-of cello sound about halfway through </li>
-          <li> Nord lead 2: drums, "string" ish chords, synth arps  </li>
-          <li> Mutable Instruments Shruthi XT: Bassline </li>
-          <li> Supa-puss bucket brigade delay pedal (on one of the NL2 sounds)</li>
-        </ul>
-        
-        <p class="postpar">
-          it really started as an experiment to see if it's possible to get decent drum sounds out of the NL2. 
-          personally I think it is a success, as long as you are content with very electronic and rough/wonky sounding drums.
-          i used some tricks on the octatrack to get a bit of randomisation in the drum patterns, so there's a bit of natural variation.
-        </p>
-        
-        <p class="postpar">
-          it's the first time i have tried to "perform" a song, which mostly involves wiggling knobs and moving faders. 
-          it took a few takes to get it a way i'm happy with, and it could be a lot better but i'm no perfectionist. 
-          i recorded it into Reaper in one take, but then added the reversed audio at the end for a laugh. i "mastered" 
-          it using a preset on a bus compressor. i'd like to work it a bit to try and get a bit more level out of it as 
-          it's too quiet.
-        </p>
+         <p class="postpar">
+            This song started a year or so ago when I got a nord lead 2 keyboard and was playing around with the drum
+            programs and arpeggiator. This resulted in the weird drum pattern for this song. The song was mostly made by
+            me badly playing a part over the rest while twiddling knobs, then recording the audio in Reaper. Once I had
+            a few parts I started to arrange them a bit.
+         </p>
+
+         <p class="postpar">
+            There are no samples in this track; all hardware synths. Instruments used were:
+         </p>
+         <ul>
+            <li> Nord lead 2 </li>
+            <li> DSI Tempest </li>
+            <li> Shruthi XT with 4PM filter board</li>
+            <li> Alesis Ion</li>
+         </ul>
+         <p class="postpar">
+            I used an analog delay pedal (Supapuss) for delay sounds and noises, and way too much Valhalla Vintageverb.
+         </p>
+
+         <p class="postpar">
+            There's no sensible structure to speak of, I just brought some part in and out as I felt like it and then
+            decided it was finished. Listening away from the computer I can see some arrangement changes I'd like to
+            make and mixing improvements, which I'll probably do at some point.
+         </p>
+
+         <p class="postpar">
+            Sadly I killed the control board of my shruthi xt the other day, so until I can be bothered to source the
+            parts and build a new one, there'll be no more tasty noises coming from that.
+         </p>
       </div>
-  </div>
+
+   </div>
+
+   <div class="apost more" style="background-color: #fca46d;">
+
+      <h2 style="margin-top: 0"> 29/10/2016: cackhander (a song) </h2>
+
+      <div class="postblock" style="background-image: url('./images/thegesture_660wide.jpg'); height: 320px;">
+         <p class="postpar" />
+         <div style="padding-left: 300px; padding-top: 45px;">
+            <audio controls>
+               <source src="cackhander_v001.mp3" type="audio/mpeg">
+               Your browser does not support the audio element.
+            </audio>
+         </div>
+      </div>
+
+      <div class="morep">
+         <p class="postpar">
+            This is probably the first song I have ever finished in Renoise. I think i bought Renoise over 10 years,
+            attracted by the way it had a sampler built in, and it has just grown better and better since then. It's
+            taken me a LONG time to get used to working in the tracker interface though, and I still often feel like I
+            could just knock up something basic or make changes to a complex pattern more quickly in a typical
+            piano-roll style sequencer. During the making of this song two things about Renoise which could REALLY do
+            with a some improvements are the pattern sequencer (I find things too small and fiddly) and the automation
+            editor (it's pain in the arse to do automation over pattern boundaries).
+         </p>
+
+         <p class="postpar">
+            This song is almost exclusively samples. The pad at the start is some samples from an old string machine,
+            pitched to the wrong range. The other main synth sound that comes in halfway through is actually a snippet
+            of a bass guitar from a Crosby Stills and Nash song (I think), but just mangled in the sampler. Making
+            strange synth sounds out of unexpected source sounds is one of my favourite things is making music. I find
+            it much more satisfying than straight up synthesis. There is one vst sythesizer in there - Vember Audio
+            Surge - providing the high-pitched arp. Oh, actually, the bass synth is also a VST; Charlatan from Blaukraut
+            engineering.
+         </p>
+
+         <p class="postpar">
+            It is clearly heavily BOC inspired, but lacking any of the finesse of their music. I don't have the patience
+            (or skill) to try and mimic their style too closely, and I think it's best to stick on the right side of the
+            line between inspiration and emulation. I'd like to improve a lot about it; it's pretty sparse in musical
+            ideas; it lacks movement in between big changes; the production is shabby. But I'll probably just leave it
+            as it is.
+         </p>
+
+         <p class="postpar">
+            Oh, one more thing: Valhalla Vintage Verb is really fantastic. Smooth as butter. Buy it if you need a good
+            reverb.
+         </p>
+      </div>
+
+   </div>
+
+   <div class="apost more" style="background-color: #fca46d;">
+
+      <h2 style="margin-top: 0"> 20/10/2016: fnordulation (a song) </h2>
+
+      <div class="postblock" style="background-image: url('./images/HyperNormal.jpg'); height: 312px;">
+         <p class="postpar" />
+         <div style="padding-left: 140px; padding-top: 55px;">
+            <audio controls>
+               <source src="fnordulation.mp3" type="audio/mpeg">
+               Your browser does not support the audio element.
+            </audio>
+         </div>
+      </div>
+
+      <div class="morep">
+         <p class="postpar">
+            here's a song a i made a few months ago. the first (and possibly last) song have made with only hardware.
+            instrument list is as follows:
+         </p>
+
+         <ul>
+            <li> Elektron Octatrack: Midi sequencing, FX, kind-of cello sound about halfway through </li>
+            <li> Nord lead 2: drums, "string" ish chords, synth arps </li>
+            <li> Mutable Instruments Shruthi XT: Bassline </li>
+            <li> Supa-puss bucket brigade delay pedal (on one of the NL2 sounds)</li>
+         </ul>
+
+         <p class="postpar">
+            it really started as an experiment to see if it's possible to get decent drum sounds out of the NL2.
+            personally I think it is a success, as long as you are content with very electronic and rough/wonky sounding
+            drums.
+            i used some tricks on the octatrack to get a bit of randomisation in the drum patterns, so there's a bit of
+            natural variation.
+         </p>
+
+         <p class="postpar">
+            it's the first time i have tried to "perform" a song, which mostly involves wiggling knobs and moving
+            faders.
+            it took a few takes to get it a way i'm happy with, and it could be a lot better but i'm no perfectionist.
+            i recorded it into Reaper in one take, but then added the reversed audio at the end for a laugh. i
+            "mastered"
+            it using a preset on a bus compressor. i'd like to work it a bit to try and get a bit more level out of it
+            as
+            it's too quiet.
+         </p>
+      </div>
+   </div>
 </body>
+
 </html>
